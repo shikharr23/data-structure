@@ -171,9 +171,6 @@ int main()
     printf("Enter Infix expression: "); 
     gets(exp);
     printf("PreFix form of infix Expression %s is %s\n", exp, covertInfixtoPrefix(exp));
-
-    printf("Enter Infix expression: "); 
-    gets(exp);
     printf("PostFix form of infix Expression %s is %s\n", exp, covertInfixtoPostfix(exp));
 
     printf("Enter Prefix expression: "); 
