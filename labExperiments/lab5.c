@@ -125,8 +125,8 @@ char* convertPostfixToInfix(char* exp)
         }
         else if(ch=='+'||ch=='-'||ch=='*'||ch=='/'||ch=='^')
         {
-            char *s1=stack[top--];
             char *s2=stack[top--];
+            char *s1=stack[top--];
             char s3[100];
             snprintf(s3,100,"(%s%c%s)",s1,ch,s2);
             strcpy(stack[++top],s3);
@@ -152,8 +152,8 @@ char* convertPrefixToInfix(char* exp)
         }
         else if(ch=='+'||ch=='-'||ch=='*'||ch=='/'||ch=='^')
         {
-            char *s1=stack[top--];
             char *s2=stack[top--];
+            char *s1=stack[top--];
             char s3[100];
             snprintf(s3,100,"(%s%c%s)",s2,ch,s1);
             strcpy(stack[++top],s3);
